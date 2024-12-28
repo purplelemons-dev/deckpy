@@ -3,7 +3,7 @@ from random import shuffle
 
 
 class Deck:
-    # TODO: implement a Hand class that deck inherits from
+    # TODO: #1 implement a Hand class that deck inherits from
     def __init__(self, num_decks: int = 1, *, cards: list[Card] = None):
         self.cards = (
             cards
