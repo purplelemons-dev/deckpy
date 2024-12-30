@@ -52,5 +52,5 @@ class Deck:
 
         return hands
 
-    def draw(self, num_cards: int) -> "Deck":
+    def draw(self, num_cards: int = 1) -> "Deck":
         return Deck(cards=[self.cards.pop() for _ in range(num_cards)])
