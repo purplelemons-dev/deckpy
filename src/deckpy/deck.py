@@ -51,3 +51,6 @@ class Deck:
                 # so glad i implemented __iadd__
 
         return hands
+
+    def draw(self, num_cards: int) -> "Deck":
+        return Deck(cards=[self.cards.pop() for _ in range(num_cards)])
